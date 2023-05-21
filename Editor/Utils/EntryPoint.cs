@@ -32,7 +32,6 @@ namespace ReadyPlayerMe.Core.Editor
             SessionState.SetBool(SESSION_STARTED_KEY, true);
 
             Startup?.Invoke();
-            ModuleUpdater.CheckForUpdates();
             EditorApplication.update -= Update;
         }
     }
